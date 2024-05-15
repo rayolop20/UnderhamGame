@@ -25,7 +25,6 @@ public class EnemyMele : MonoBehaviour
     {
         if (hp <= 0 )
         {
-            XPManager.AddExperience(5);
             Destroy(gameObject);
         }
     }
