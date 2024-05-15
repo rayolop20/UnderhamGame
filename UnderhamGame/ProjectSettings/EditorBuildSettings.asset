@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/POlMScene.unity
-    guid: 3f2521c76757d7e43ab54b70edaf1900
+    path: Assets/Scenes/Missio_1.unity
+    guid: 12fe9c0e028c86b429b95594ddc885c1
   m_configObjects: {}
