@@ -33,7 +33,11 @@ public class Player_Movment : MonoBehaviour
     void Update()
     {
 
-        if (GameTime.isPaused) return;
+        if (GameTime.isPaused)
+        {
+            rb.velocity = Vector3.zero;
+            return;
+        }
 
         if (Input.GetKey(KeyCode.A) && mState != MovingState.attack && mState != MovingState.shoot)
         {

@@ -24,6 +24,7 @@ public class PlayerAnimations : MonoBehaviour
         {
             pMov.mState = Player_Movment.MovingState.idle;
         }
+
         switch (pMov.mState)
         {
             case Player_Movment.MovingState.idle:

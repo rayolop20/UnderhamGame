@@ -18,7 +18,7 @@ public class DialogueHandler : MonoBehaviour
         ConversationManager.OnConversationEnded -= HandleConversationEnd_C4P;
     }
 
-    public static void StartDialogue(GameObject npcConversation, Rigidbody player)
+    public static void StartDialogue(GameObject npcConversation)
     {
         NPCConversation conversation = npcConversation.GetComponent<NPCConversation>();
 
@@ -26,7 +26,6 @@ public class DialogueHandler : MonoBehaviour
 
         _conversationManager.StartConversation(conversation);
 
-        player.velocity = Vector3.zero;
     }
 
     void HandleConversationStart_C4P() { 
