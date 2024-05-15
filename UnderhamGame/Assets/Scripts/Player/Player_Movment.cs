@@ -56,7 +56,7 @@ public class Player_Movment : MonoBehaviour
 
         if (mState != MovingState.attack && mState != MovingState.shoot)
         {
-            if (rb.velocity.normalized.z > 0) mState = MovingState.run;
+            if (rb.velocity.normalized.z != 0) mState = MovingState.run;
             else mState = MovingState.idle;
         }
         
@@ -93,16 +93,16 @@ public class Player_Movment : MonoBehaviour
         
         }
 
-        SpeedCap();
+        //SpeedCap();
     }
 
     void SpeedCap()
     {
-        Vector3 flatvel = new Vector3(rb.velocity.x, 0.0f, rb.velocity.z);
+        Vector3 flatvel = rb.velocity;
 
-        if (flatvel.magnitude > movementSpeed * 1f)
+        if (flatvel.magnitude > movementSpeed * 1.5f)
         {
-            Vector3 limitedVel = flatvel.normalized * movementSpeed * 0.2f;
+            Vector3 limitedVel = flatvel.normalized * movementSpeed * 1.5f;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
     }
