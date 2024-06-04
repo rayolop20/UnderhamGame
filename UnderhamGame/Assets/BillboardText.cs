@@ -17,7 +17,15 @@ public class BillboardText : MonoBehaviour
     {
         if(followPlayer)
         {
-            transform.LookAt(player.transform);
+            if (player.GetComponent<Player_Movment>().isJumping)
+            {
+                Vector3 newPos = new Vector3(player.transform.position.x, 0, player.transform.position.z);
+                transform.LookAt(newPos);
+            }
+            else
+            {
+                transform.LookAt(player.transform.position);
+            }
         }
         else
         {

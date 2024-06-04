@@ -17,6 +17,7 @@ public class Player_Movment : MonoBehaviour
     public GameObject orientation;
     public Rigidbody rb;
 
+    [HideInInspector]public bool isJumping = false;
     public bool isRunning = false;
     public float timer = 0.0f;
 
@@ -69,13 +70,14 @@ public class Player_Movment : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space) && Physics.Raycast(gameObject.transform.position, Vector3.down, jumpDistcance, Ground) == true && mState != MovingState.attack && mState != MovingState.shoot)
         {
+            isJumping = true;
             rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
 
         if (mState == MovingState.attack)
         {
             timer += GameTime.deltaTime;
-            if(timer > 2.5f)
+            if(timer > 1.0f)
             {
                 mState = MovingState.idle;
                 timer = 0.0f;
@@ -93,7 +95,7 @@ public class Player_Movment : MonoBehaviour
         
         }
 
-        //SpeedCap();
+        SpeedCap();
     }
 
     void SpeedCap()
@@ -104,6 +106,14 @@ public class Player_Movment : MonoBehaviour
         {
             Vector3 limitedVel = flatvel.normalized * movementSpeed * 1.5f;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == 6)
+        {
+            isJumping = false;
         }
     }
 
