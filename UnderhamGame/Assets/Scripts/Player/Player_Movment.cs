@@ -87,7 +87,7 @@ public class Player_Movment : MonoBehaviour
         if (mState == MovingState.shoot)
         {
             timer += GameTime.deltaTime;
-            if(timer > 1.0f)
+            if(timer > 0.6f)
             {
                 mState = MovingState.idle;
                 timer = 0.0f;
