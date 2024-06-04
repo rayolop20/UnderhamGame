@@ -4,11 +4,26 @@ using UnityEngine;
 
 public class BillboardText : MonoBehaviour
 {
+    public Vector3 StartRotation = Vector3.zero;
+    public bool followPlayer = false;
+    private GameObject player;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
 
     private void Update()
     {
-        transform.LookAt(Camera.main.transform);
-        transform.Rotate(90, 0, 0);
+        if(followPlayer)
+        {
+            transform.LookAt(player.transform);
+        }
+        else
+        {
+            transform.LookAt(Camera.main.transform);
+        }
+        transform.Rotate(StartRotation);
     }
 
 }
