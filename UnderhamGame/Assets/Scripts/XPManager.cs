@@ -18,7 +18,7 @@ public class XPManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (experience > 40.0f)
+        if (experience >= 50.0f)
         {
             level = "Captain";
         }
@@ -29,7 +29,7 @@ public class XPManager : MonoBehaviour
 
         ui.text = "Rango: " + level + " XP: " + experience.ToString();
 
-        if (Input.GetKeyDown(KeyCode.Space)) experience += 5;
+       // if (Input.GetKeyDown(KeyCode.Space)) experience += 5;
     }
 
     public static void AddExperience(float xp)

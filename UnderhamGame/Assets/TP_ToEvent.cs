@@ -13,9 +13,19 @@ public class TP_ToEvent : MonoBehaviour
         SceneManager.LoadScene("Missio_1");
     }
     
+    public void TeleportToMission2()
+    {
+        if (XPManager.experience >= 50)
+        {
+            SceneManager.LoadScene("Missio_2");
+        }
+
+    }
+    
     public void TeleportToEvent2()
     {
         XPManager.experience += 15;
+        GameTime.isPaused = false;
         SceneManager.LoadScene("SampleScene");
 
         
@@ -23,6 +33,7 @@ public class TP_ToEvent : MonoBehaviour
     public void TeleportToEvent3()
     {
         XPManager.experience -= 15;
+        GameTime.isPaused = false;
         SceneManager.LoadScene("SampleScene");
         
     }

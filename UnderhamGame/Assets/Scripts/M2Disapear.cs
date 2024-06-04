@@ -7,7 +7,7 @@ public class M2Disapear : MonoBehaviour
 {
 
 
-    public GameObject gameObject;
+  
     // Start is called before the first frame update
 
     public ConversationManager conversationManager;
