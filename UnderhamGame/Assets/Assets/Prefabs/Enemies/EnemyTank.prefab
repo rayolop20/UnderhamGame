@@ -34,7 +34,8 @@ Transform:
   m_LocalPosition: {x: -14.95, y: 0.89, z: 1.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 4036795364036261649}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53,7 +54,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5348219810824257494}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -190,3 +191,81 @@ MonoBehaviour:
   atackSpeed: 0
   damage: 10
   hp: 30
+--- !u!1001 &3938288936050707089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6287144793150508002}
+    m_Modifications:
+    - target: {fileID: 426117627887494970, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_Name
+      value: SAJDERA-GANGSTER-LP Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.912644
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 14.646843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.912644
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.033233643
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.14834034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.4999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+--- !u!4 &4036795364036261649 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1054421845768699264, guid: 853766108615b0644abb885f3a60bd7a, type: 3}
+  m_PrefabInstance: {fileID: 3938288936050707089}
+  m_PrefabAsset: {fileID: 0}
